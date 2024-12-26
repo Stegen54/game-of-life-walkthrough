@@ -11,7 +11,27 @@
     <div class="controls">
         <button onclick="toggle()">Start/Stop</button>
         <button onclick="reset()">Reset</button>
+        <button onclick="toggleInfo()">Show Info</button>
     </div>
+    
+    <div id="info-panel" class="info-panel hidden">
+        <h1>Conway's Game of Life</h1>
+        <p>This is a cellular automaton simulation where cells live or die based on simple rules:</p>
+        <h2>Rules:</h2>
+        <ol>
+            <li>Any live cell with fewer than 2 live neighbors dies (underpopulation)</li>
+            <li>Any live cell with 2 or 3 live neighbors lives</li>
+            <li>Any live cell with more than 3 live neighbors dies (overpopulation)</li>
+            <li>Any dead cell with exactly 3 live neighbors becomes alive</li>
+        </ol>
+        <h2>Controls:</h2>
+        <ul>
+            <li><strong>Start/Stop:</strong> Toggle the simulation</li>
+            <li><strong>Reset:</strong> Generate a new random pattern</li>
+        </ul>
+        <button onclick="toggleInfo()" class="close-button">Close</button>
+    </div>
+
     <canvas id="gameCanvas"></canvas>
     <script src="script.js" defer></script>
 </body>

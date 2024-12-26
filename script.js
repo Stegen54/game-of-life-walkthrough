@@ -137,6 +137,14 @@ function toggle() {
 }
 
 /**
+ * @description Toggle the visibility of the information panel
+ */
+function toggleInfo() {
+    const infoPanel = document.getElementById('info-panel');
+    infoPanel.classList.toggle('hidden');
+}
+
+/**
  * @description Reset the game to its initial state
  */
 function reset() {

@@ -27,3 +27,42 @@ button {
 button:hover {
     background: #2ea043;
 }
+
+.info-panel {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #161b22;
+    color: #c9d1d9;
+    padding: 20px;
+    border-radius: 6px;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.info-panel h1 {
+    color: #58a6ff;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.info-panel h2 {
+    color: #58a6ff;
+    font-size: 18px;
+    margin: 15px 0 10px;
+}
+
+.info-panel ol, .info-panel ul {
+    margin-left: 20px;
+    line-height: 1.5;
+}
+
+.close-button {
+    margin-top: 15px;
+}
+
+.hidden {
+    display: none;
+}
